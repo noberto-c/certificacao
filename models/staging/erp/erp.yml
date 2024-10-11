@@ -14,3 +14,15 @@ sources:
 #              - not_null  
       - name: customer
         description: Tabela fonte com informações de clientes
+      - name: product
+        description: Tabela fonte com informações de produtos
+      - name: address
+        description: Tabela fonte com informações de endereços
+      - name: stateprovince
+        description: Tabela fonte com informações de estados
+      - name: countryregion
+        description: Tabela fonte com informações de países
+      - name: creditcard
+        description: Tabela fonte com informações de cartões de crédito
+      - name: salesreason
+        description: Tabela fonte com informações de motivos de venda
