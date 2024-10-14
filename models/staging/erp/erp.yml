@@ -26,3 +26,10 @@ sources:
         description: Tabela fonte com informações de cartões de crédito
       - name: salesreason
         description: Tabela fonte com informações de motivos de venda
+      - name: salesorderheadersalesreason
+        description: Tabela fonte com informações de id de motivos de venda e pedido
+      - name: salesorderheader
+        description: Tabela fonte com informações de venda
+      - name: salesorderdetail
+        description: Tabela fonte com informações de detalhes de venda
+      
