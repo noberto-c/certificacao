@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_customer
+    description: Dimensão de dados de cliente
+    columns:
+      - name: pk_customer
+        description: Chave primária da tabela.
+        data_tests:
+          - unique
+          - not_null     
+      - name: customer_name
+        description: Nome do cliente
+      - name: fk_store
+        description: Chave estrangeira de loja
+      - name: fk_territory
+        description: Chave estrangeira do território

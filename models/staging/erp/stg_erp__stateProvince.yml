@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_erp__stateProvince
+    description: Stage de dados de estado
+    columns:
+      - name: pk_stateprovince
+        description: Chave primária da tabela.
+        data_tests:
+          - unique
+          - not_null     

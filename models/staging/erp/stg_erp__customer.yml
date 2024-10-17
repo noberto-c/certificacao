@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_erp__customer
+    description: Stage de dados de cliente
+    columns:
+      - name: pk_customer
+        description: Chave primária da tabela.
+        data_tests:
+          - unique
+          - not_null   

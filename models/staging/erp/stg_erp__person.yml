@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_erp__person
+    description: Stage de dados de pessoa
+    columns:
+      - name: pk_person
+        description: Chave primária da tabela.
+        data_tests:
+          - unique
+          - not_null     

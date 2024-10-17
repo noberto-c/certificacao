@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_salesreason
+    description: Dimensão de dados de motivo de venda
+    columns:
+      - name: fk_salesorderid
+        description: Chave estrangeira número pedido
+      - name: fk_salesreason
+        description: Chave estrangeira número motivo

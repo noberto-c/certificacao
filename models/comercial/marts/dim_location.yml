@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_location
+    description: Dimensão de dados de local (país, estado, cidade, endereço)
+    columns:
+      - name: pk_address
+        description: Chave primária da tabela.
+        data_tests:
+          - unique
+          - not_null     
+      - name: city
+        description: Nome da cidade
+      - name: state_name
+        description: Nome do estado
+      - name: country_name
+        description: Nome do país
