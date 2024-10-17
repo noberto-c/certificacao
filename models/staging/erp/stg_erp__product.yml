@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_erp__product
+    description: Stage de dados de produto
+    columns:
+      - name: pk_product
+        description: Chave primária da tabela.
+        data_tests:
+          - unique
+          - not_null     
+

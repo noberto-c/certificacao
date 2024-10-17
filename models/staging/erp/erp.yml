@@ -7,29 +7,74 @@ sources:
     tables:
       - name: person
         description: Tabela fonte com informações de pessoas
-#        columns:
-#          - name: id
-#            data_tests:
-#              - unique
-#              - not_null  
+        columns:
+          - name: BUSINESSENTITYID
+            data_tests:
+              - unique
+              - not_null  
       - name: customer
         description: Tabela fonte com informações de clientes
+        columns:
+          - name: customerid
+            data_tests:
+              - unique
+              - not_null  
       - name: product
         description: Tabela fonte com informações de produtos
+        columns:
+          - name: productid
+            data_tests:
+              - unique
+              - not_null
       - name: address
         description: Tabela fonte com informações de endereços
+        columns:
+          - name: addressid
+            data_tests:
+              - unique
+              - not_null
       - name: stateprovince
         description: Tabela fonte com informações de estados
+        columns:
+          - name: stateprovinceid
+            data_tests:
+              - unique
+              - not_null
       - name: countryregion
         description: Tabela fonte com informações de países
+        columns:
+          - name: countryregioncode
+            data_tests:
+              - unique
+              - not_null
       - name: creditcard
         description: Tabela fonte com informações de cartões de crédito
+        columns:
+          - name: creditcardid
+            data_tests:
+              - unique
+              - not_null
       - name: salesreason
         description: Tabela fonte com informações de motivos de venda
+        columns:
+          - name: salesreasonid
+            data_tests:
+              - unique
+              - not_null
       - name: salesorderheadersalesreason
         description: Tabela fonte com informações de id de motivos de venda e pedido
       - name: salesorderheader
         description: Tabela fonte com informações de venda
+        columns:
+          - name: salesorderid
+            data_tests:
+              - unique
+              - not_null
       - name: salesorderdetail
         description: Tabela fonte com informações de detalhes de venda
+        columns:
+          - name: salesorderdetailid
+            data_tests:
+              - unique
+              - not_null
       

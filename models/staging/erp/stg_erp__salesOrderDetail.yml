@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_erp__salesOrderDetail
+    description: Stage de dados de itens/detalhes de venda
+    columns:
+      - name: pk_salesorderdetailid
+        description: Chave primária da tabela.
+        data_tests:
+          - unique
+          - not_null     
+

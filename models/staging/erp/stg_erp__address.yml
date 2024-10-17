@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_erp__address
+    description: Stage de dados de endereço
+    columns:
+      - name: pk_address
+        description: Chave primária da tabela.
+        data_tests:
+          - unique
+          - not_null     

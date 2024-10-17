@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_erp__salesReason
+    description: Stage de dados de motivos de venda
+    columns:
+      - name: pk_salesreason
+        description: Chave primária da tabela.
+        data_tests:
+          - unique
+          - not_null     
+

@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: stg_erp__countryRegion
+    description: Stage de dados de país
+    columns:
+      - name: pk_countryregioncode
+        description: Chave primária da tabela.
+        data_tests:
+          - unique
+          - not_null     

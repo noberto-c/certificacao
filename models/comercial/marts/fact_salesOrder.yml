@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: fact_salesOrder
+    description: Fato de dados de vendas
+    columns:
+      - name: pk_salesorder
+        description: Chave primária da tabela.
+        data_tests:
+          - unique
+          - not_null     
+      - name: salesorderid
+        description: ID do pedido/venda
+      - name: fk_customer
+        description: Chave estrangeira do cliente
+      - name: fk_creditcard
+        description: Chave estrangeira do ID do cartão de crédito
+      - name: fk_product
+        description: Chave estrangeira do produto
+      - name: fk_shiptoadress
+        description: Chave estrangeira do endereço de entrega
+      - name: status
+        description: Status do pedido
+      - name: order_date
+        description: Data do pedido/venda
+      - name: order_qty
+        description: Quantidade de itens/produtos do pedido/venda
+      - name: unit_price
+        description: Preço unitário do produto
+      - name: gross_value
+        description: Valor bruto da venda (Quantidade * Preço unitário)
+      - name: net_price
+        description: Valor líquido da venda (Quantidade * Preço unitário - descontos)
+

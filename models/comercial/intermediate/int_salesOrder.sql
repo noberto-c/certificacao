@@ -12,6 +12,8 @@ joined as (
     , salesorderheader.fk_customer
     , salesorderheader.fk_creditcard
     , salesorderdetail.fk_product
+    , salesorderheader.fk_shiptoadress
+    , salesorderheader.status
     , cast(salesorderheader.orderdate as date) as order_date
     , salesorderdetail.orderqty as order_qty
     , salesorderdetail.unitprice as unit_price
